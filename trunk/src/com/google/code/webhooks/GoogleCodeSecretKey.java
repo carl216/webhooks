@@ -31,7 +31,7 @@ import javax.crypto.SecretKey;
  * key to verify web hook messages received from Google Code.
  * 
  * Complete example showing how to verify the HMAC-MD5 authentication is available here:
- * http://sagetv-addons.googlecode.com/
+ * http://webhooks.googlecode.com/
  * 
  * @version $Id$
  */
