@@ -1,5 +1,5 @@
 /*
- *      Copyright 2009 Battams, Derek
+ *      Copyright 2009-2011 Battams, Derek
  *       
  *       Licensed under the Apache License, Version 2.0 (the "License");
  *       you may not use this file except in compliance with the License.
@@ -93,7 +93,6 @@ public class GoogleCodeSecretKey implements SecretKey {
 	 * (non-Javadoc)
 	 * @see java.security.Key#getAlgorithm()
 	 */
-	@Override
 	public String getAlgorithm() {
 		return "HmacMD5";
 	}
@@ -102,7 +101,6 @@ public class GoogleCodeSecretKey implements SecretKey {
 	 * (non-Javadoc)
 	 * @see java.security.Key#getEncoded()
 	 */
-	@Override
 	public byte[] getEncoded() {
 		return key.getBytes(Charset.forName("UTF-8"));
 	}
@@ -111,7 +109,6 @@ public class GoogleCodeSecretKey implements SecretKey {
 	 * (non-Javadoc)
 	 * @see java.security.Key#getFormat()
 	 */
-	@Override
 	public String getFormat() {
 		return "RAW";
 	}
